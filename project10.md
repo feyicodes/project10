@@ -56,6 +56,27 @@ I installed certbot and requested for an SSL/TLS certificate and also made sure 
 
 I requested for my certificate by following the certbot prompt.
 
+![image](images/img14.png)
+
+![image](images/img15.png)
+
+I successfully tested secured access to my web solution and the padlock icon was clearly displayed.
+
+![image](images/img13.png)
+
+I also tested the renewal command successfully.
+
+```bash
+    sudo certbot renew --dry-run
+```
+
+I also configured the scheduled job to run the renew command peridically with 
+```bash
+    crontab -e
+```
+Finally, I added the line:
+
+"* */12 * * *   root /usr/bin/certbot renew > /dev/null 2>&1".
 
 
 
