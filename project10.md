@@ -78,7 +78,9 @@ Finally, I added the line:
 
 "* */12 * * *   root /usr/bin/certbot renew > /dev/null 2>&1".
 
+![image](images/imgp.png)
 
+![image](images/imgq.png)
 
 
 
